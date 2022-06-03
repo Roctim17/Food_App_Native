@@ -7,7 +7,7 @@ import AntDesign from "react-native-vector-icons/AntDesign";
 export default function SearchBar() {
     return (
         <View style={{
-            marginTop: 1,
+            margin: 10,
             flexDirection: "row"
         }}>
             <GooglePlacesAutocomplete

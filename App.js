@@ -1,25 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// import { StatusBar } from 'expo-status-bar';
+import { View } from 'react-native';
+import Home from './Pages/Home';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Hi, This is Roctim</Text>
-      <StatusBar style="auto" />
+    <View>
+      <Home></Home>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    color: 'red',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//     color: 'red',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
 
-    color: 'red',
-  },
-});
+// });

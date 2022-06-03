@@ -2,9 +2,7 @@ import { View, Text, Image } from 'react-native'
 import React from 'react'
 import { TouchableOpacity } from 'react-native'
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-import { ScrollView } from 'react-native';
-
-const localRestaurants = [
+export const localRestaurants = [
     {
         name: "Beachside Bar",
         image_url:
@@ -34,13 +32,16 @@ const localRestaurants = [
     },
 ];
 
-export default function RestaurantItem() {
+
+
+export default function RestaurantItem({ navigation, ...props }) {
+
     return (
         <TouchableOpacity activeOpacity={1} style={{
             marginBottom: 30
         }}>
             {
-                localRestaurants.map((restaurant, index) => (
+                props.restaurantData.map((restaurant, index) => (
 
                     <View
                         key={index}

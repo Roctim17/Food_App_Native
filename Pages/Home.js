@@ -3,6 +3,8 @@ import React from 'react'
 import Header from '../Component/Header'
 import SearchBar from '../Component/SearchBar'
 import Categories from '../Component/Categories'
+import RestaurantItem from '../Component/RestaurantItem'
+import { ScrollView } from 'react-native'
 
 export default function Home() {
     return (
@@ -14,8 +16,11 @@ export default function Home() {
             }}>
                 <Header></Header>
                 <SearchBar></SearchBar>
-                <Categories></Categories>
             </View>
+            <ScrollView showsVerticalScrollIndicator={false}>
+                <Categories></Categories>
+            </ScrollView>
+            <RestaurantItem></RestaurantItem>
         </SafeAreaView>
 
     )

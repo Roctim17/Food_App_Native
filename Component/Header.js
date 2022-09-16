@@ -18,6 +18,7 @@ const HeaderBtn = (props) => (
         paddingVertical: 6,
         paddingHorizontal: 16,
         borderRadius: 30,
+        marginTop: 20,
 
     }}
         onPress={() => props.setActive(props.text)}
